@@ -1,0 +1,132 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <title>Markdown Toolbar - shukaiyangtw.github.io</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style_toc.css" type="text/css" />
+    <script type="text/javascript">
+        function onTocClicked() {
+             let toc = document.getElementById("toc_div");
+             if (toc.style.display == "block") {  toc.style.display = "none";  }
+             else {  toc.style.display = "block";  }
+        }
+    </script>
+</head>
+
+<body>
+<div id="page_container">
+    <div id="action_bar_row">
+        <div id="action_bar">
+            <div class="action_bar_button">
+                <a href="https://shukaiyangtw.github.io/index_en.htm"><img src="images/back.png" /></a>
+                <a class="action_bar_textlink" href="https://shukaiyangtw.github.io/index_en.htm">Home</a>
+            </div>
+
+            <div id="toc_button" class="action_bar_button">
+                <a href="javascript: onTocClicked();"><img src="images/toc.png" /></a>
+                <a class="action_bar_textlink" href="javascript: onTocClicked();">Topics</a>
+            </div>
+
+            <div class="action_bar_title">
+                Markdown Toolbar</div>
+
+            <div class="action_bar_button">
+                <a href="mdtoolbar_zh.htm"><img src="images/lang.png" /></a>
+                <a class="action_bar_textlink" href="mdtoolbar_zh.htm">中文</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="context_row">
+        <div class="context_wrapper" style="position: relative">
+
+        <div id="toc_div"><ul>
+            <li><a href="index_en.htm">Introduction</a></li>
+            <li><a href="newsite_en.htm">New Website</a></li>
+            <li><a class="toc_current" href="mdtoolbar_en.htm">Markdown Toolbar</a></li>
+            <li><a href="export_en.htm">Export HTML</a></li>
+        </ul></div>
+
+        <div class="content_div">
+
+<h2>What is Markdown syntax?</h2>
+<p>As is well known, HTML is a generic markup language that can add rich styling, formatting, images, and hyperlinks to plain text, and can
+be read across platforms and software on various devices. However, if document authors have to manually insert HTML tags into their articles,
+it significantly reduces writing efficiency and readability of the text files. In other words, it is simply a hassle!</p>
+<p>Isn't there a compromise between minimalist plain text and tedious HTML document editing? If document authors do not need complex effects
+and only require some intuitive formatting —such as displaying document titles, paragraphs, and bullet points— that is where Markdown syntax comes in.
+Markdown files are plain text documents, typically with a '.md' extension. Using simple symbols like brackets or hash signs, you can quickly apply
+formatting to specific text. Furthermore, many document publishing platforms now support Markdown syntax, such as GitHub and HackMD,
+as well as various AI LLMs, all of which can quickly understand Markdown documents and display them correctly.</p>
+<p>For a table of Markdown syntax, please refer to <a href="https://daringfireball.net/projects/markdown/syntax">Markdown: Syntax</a>. If you are not familiar
+with the syntax, the toolbar above allows you to quickly insert Markdown syntax into your editing that is equivalent to the following HTML tags.</p>
+<h2>Add Text Styles</h2>
+<p>In Markdown syntax, simply adding an * or + to some text can change it to bold, italic, or other styles. The user can type the symbols directly
+or use the mouse to select the text, then click the toolbar button to add the following styles.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Button</th>
+<th style="text-align: center;">Markdow syntax</th>
+<th style="text-align: center;">Equivalent HTML tag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="images/bold.png" alt="bold" /></td>
+<td style="text-align: center;">**bold**</td>
+<td style="text-align: center;">&lt;b&gt;bold&lt;/b&gt;</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="images/italic.png" alt="italic" /></td>
+<td style="text-align: center;">*italic*</td>
+<td style="text-align: center;">&lt;i&gt;italic&lt;/i&gt;</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="images/underline.png" alt="underline" /></td>
+<td style="text-align: center;">++underline++</td>
+<td style="text-align: center;">&lt;u&gt;underline&lt;/u&gt;</td>
+</tr>
+</tbody>
+</table>
+<p>If you want to create an ordered list or a unordered list, just type the items line by line.
+After selecting the lines, click the toolbar buttons to convert the lines into list items.</p>
+<p><img src="images/unordered_list.png" alt="unordered list" /> Markdown syntax for equivalent  &lt;ul&gt; tag:</p>
+<p>- Item 1</p>
+<p>- Item 2</p>
+<p>- Item 3</p>
+<p><img src="images/ordered_list.png" alt="ordered list" /> Markdown syntax for equivalent  &lt;ol&gt; tag:</p>
+<p>1 Item 1</p>
+<p>2 Item 2</p>
+<p>3 Item 3</p>
+<p>Since symbols like * or + and various parentheses may be recognized as Markdown syntax, and may be converted into HTML tags by this software,
+if the user wants these symbols displayed ordinarily, just adds a backslash &quot;&quot; before the symbols.</p>
+<h2>Add Titles and Dividers</h2>
+<p>The Makedig package automatically wraps continuous text lines into a paragraph with a &lt;p&gt; tag. Additionally, when forming the h1~h4 header hierarchy in the document,
+just add 1~4 symbol # before the title text line, or after selecting the text line, click the H1~H3 buttons on the toolbar.</p>
+<p>Additionally, if you want to add a separator line like the &lt;hr/&gt; tag between text lines, click the hr button on the toolbar.</p>
+<p>If you want a part of text displayed exactly as is, without interpreting it as Markdown or HTML syntax, select the text and click the pre button on the toolbar.
+The effect is the same: Add &lt;pre&gt; or &lt;code&gt; tags before or after text, which is suitable for displaying source code in documents.</p>
+<h2>Insert Images and Hyperlinks</h2>
+<p>Compared to plain text, the advantage of HTML is that they can provide images and hyperlinks within documents. Although Markdown documents are plain text,
+they still cite external images in files similar with &lt;img&gt; elements in HTML, with the following syntax:</p>
+<p>![Alternative text](Image file path)</p>
+<p>The user doesn't need to memorize this syntax. He simply clicks the image button on the toolbar and selects the image to insert in the file dialog.
+The software will insert the Markdown syntax and image path into the text being edited.</p>
+<p><img src="images/insert_img.png" alt="Insert img" /></p>
+<p>The Markdown syntax for inserting hyperlinks in documents is similar, except it lacks an exclamation mark:</p>
+<p>[Hyperlink text](Hyper url)</p>
+<p>Similarly,  the user doesn't need to memorize this syntax. He simply clicks the hyperlink button on the toolbar and enters the link text and URL in the following dialog box.</p>
+<p><img src="images/insert_link.png" alt="Insert hyperlink" /></p>
+<p><img src="images/hyperlinkdlg_en.png" alt="Hyperlink dialog" /></p>
+
+
+            <p style="text-align:center"><a class="next_button" href="export_en.htm">Next: Export HTML</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

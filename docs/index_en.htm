@@ -1,0 +1,79 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <title>Introduction - shukaiyangtw.github.io</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style_toc.css" type="text/css" />
+    <script type="text/javascript">
+        function onTocClicked() {
+             let toc = document.getElementById("toc_div");
+             if (toc.style.display == "block") {  toc.style.display = "none";  }
+             else {  toc.style.display = "block";  }
+        }
+    </script>
+</head>
+
+<body>
+<div id="page_container">
+    <div id="action_bar_row">
+        <div id="action_bar">
+            <div class="action_bar_button">
+                <a href="https://shukaiyangtw.github.io/index_en.htm"><img src="images/back.png" /></a>
+                <a class="action_bar_textlink" href="https://shukaiyangtw.github.io/index_en.htm">Home</a>
+            </div>
+
+            <div id="toc_button" class="action_bar_button">
+                <a href="javascript: onTocClicked();"><img src="images/toc.png" /></a>
+                <a class="action_bar_textlink" href="javascript: onTocClicked();">Topics</a>
+            </div>
+
+            <div class="action_bar_title">
+                Introduction</div>
+
+            <div class="action_bar_button">
+                <a href="index_zh.htm"><img src="images/lang.png" /></a>
+                <a class="action_bar_textlink" href="index_zh.htm">中文</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="context_row">
+        <div class="context_wrapper" style="position: relative">
+
+        <div id="toc_div"><ul>
+            <li><a class="toc_current" href="index_en.htm">Introduction</a></li>
+            <li><a href="newsite_en.htm">New Website</a></li>
+            <li><a href="mdtoolbar_en.htm">Markdown Toolbar</a></li>
+            <li><a href="export_en.htm">Export HTML</a></li>
+        </ul></div>
+
+        <div class="content_div">
+
+<h1>Web-Docs Editor</h1>
+<h2>Introduction</h2>
+<p>This is the documentation editor used by the <a href="https://shukaiyangtw.github.io/">Shu-Kai Yang</a> website. Even this instruction document
+was created using this software. It works by allowing users to edit text for each webpage using Markdown syntax. The software then uses
+the <a href="https://github.com/xoofx/markdig">Markdig.1.4.2</a> package to convert the plain text webpage content into HTML and build the table
+of contents links for the chapters. Additionally, every webpage in the directory should have both the English and the Chinese version,
+which is also edited using this software.</p>
+<p><img src="images/screenshot_en.png" alt="Screenshot of DocsEditor" /></p>
+<p>As shown  above, the user creates or selects the page to be edited in the chapter directory on the left, and edits the page content in the text
+editing area on the right by Markdown syntax (or mixed with HTML syntax). The user can also use the toolbar to insert Markdown syntax into
+the content, use the language switch button in the top-right corner to toggle between Chinese and English versions, or preview the current
+results in a web browser.</p>
+<h2>Download Latest Version</h2>
+<p><a class="downloader" href="https://github.com/shukaiyangtw/DocsEditor/releases/download/v1.0.0/DocsEditorPortable.zip"><img src="images/github_zip.png" /></a></p>
+<div class="downloader">Latest Version: 1.0<br /> Price: Free<br />System Requirement：Windows 10 (Version 1803 or later)。</div>
+<h2>Privacy Policy</h2>
+<p>This software is simply a website creation tool that organizes Markdown text into multiple HTML files. It does not collect, store, or transmit your personal information or device files.</p>
+
+
+            <p style="text-align:center"><a class="next_button" href="newsite_en.htm">Next: New Website</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

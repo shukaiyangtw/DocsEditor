@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <title>Export HTML - shukaiyangtw.github.io</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style_toc.css" type="text/css" />
+    <script type="text/javascript">
+        function onTocClicked() {
+             let toc = document.getElementById("toc_div");
+             if (toc.style.display == "block") {  toc.style.display = "none";  }
+             else {  toc.style.display = "block";  }
+        }
+    </script>
+</head>
+
+<body>
+<div id="page_container">
+    <div id="action_bar_row">
+        <div id="action_bar">
+            <div class="action_bar_button">
+                <a href="https://shukaiyangtw.github.io/index_en.htm"><img src="images/back.png" /></a>
+                <a class="action_bar_textlink" href="https://shukaiyangtw.github.io/index_en.htm">Home</a>
+            </div>
+
+            <div id="toc_button" class="action_bar_button">
+                <a href="javascript: onTocClicked();"><img src="images/toc.png" /></a>
+                <a class="action_bar_textlink" href="javascript: onTocClicked();">Topics</a>
+            </div>
+
+            <div class="action_bar_title">
+                Export HTML</div>
+
+            <div class="action_bar_button">
+                <a href="export_zh.htm"><img src="images/lang.png" /></a>
+                <a class="action_bar_textlink" href="export_zh.htm">中文</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="context_row">
+        <div class="context_wrapper" style="position: relative">
+
+        <div id="toc_div"><ul>
+            <li><a href="index_en.htm">Introduction</a></li>
+            <li><a href="newsite_en.htm">New Website</a></li>
+            <li><a href="mdtoolbar_en.htm">Markdown Toolbar</a></li>
+            <li><a class="toc_current" href="export_en.htm">Export HTML</a></li>
+        </ul></div>
+
+        <div class="content_div">
+
+<p>After editing all the documents, simply click the &quot;Generate HTML Files&quot; button, and all *_zh.htm and *_en.htm files will be generated in the specified directory.</p>
+<p><img src="images/export_en.png" alt="alter text" /></p>
+<p>The user can continue editing these .htm and .css files to add more detailed styles and even add JavaScript code. When publishing this website, you don't need docs.tocx or .md files.</p>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

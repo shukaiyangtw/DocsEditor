@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <home lang="en" url="https://shukaiyangtw.github.io/index_en.htm">Home</home>
+  <home lang="zh" url="https://shukaiyangtw.github.io/index_zh.htm">首頁</home>
+  <toc>
+    <chapter name="index">
+      <title lang="en">Introduction</title>
+      <title lang="zh">簡介</title>
+    </chapter>
+    <chapter name="newsite">
+      <title lang="en">New Website</title>
+      <title lang="zh">建立新網站</title>
+    </chapter>
+    <chapter name="mdtoolbar">
+      <title lang="en">Markdown Toolbar</title>
+      <title lang="zh">Markdown 工具列</title>
+    </chapter>
+    <chapter name="export">
+      <title lang="en">Export HTML</title>
+      <title lang="zh">匯出 HTML</title>
+    </chapter>
+  </toc>
+</doc>

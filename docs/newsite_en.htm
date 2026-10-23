@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <title>New Website - shukaiyangtw.github.io</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style_toc.css" type="text/css" />
+    <script type="text/javascript">
+        function onTocClicked() {
+             let toc = document.getElementById("toc_div");
+             if (toc.style.display == "block") {  toc.style.display = "none";  }
+             else {  toc.style.display = "block";  }
+        }
+    </script>
+</head>
+
+<body>
+<div id="page_container">
+    <div id="action_bar_row">
+        <div id="action_bar">
+            <div class="action_bar_button">
+                <a href="https://shukaiyangtw.github.io/index_en.htm"><img src="images/back.png" /></a>
+                <a class="action_bar_textlink" href="https://shukaiyangtw.github.io/index_en.htm">Home</a>
+            </div>
+
+            <div id="toc_button" class="action_bar_button">
+                <a href="javascript: onTocClicked();"><img src="images/toc.png" /></a>
+                <a class="action_bar_textlink" href="javascript: onTocClicked();">Topics</a>
+            </div>
+
+            <div class="action_bar_title">
+                New Website</div>
+
+            <div class="action_bar_button">
+                <a href="newsite_zh.htm"><img src="images/lang.png" /></a>
+                <a class="action_bar_textlink" href="newsite_zh.htm">中文</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="context_row">
+        <div class="context_wrapper" style="position: relative">
+
+        <div id="toc_div"><ul>
+            <li><a href="index_en.htm">Introduction</a></li>
+            <li><a class="toc_current" href="newsite_en.htm">New Website</a></li>
+            <li><a href="mdtoolbar_en.htm">Markdown Toolbar</a></li>
+            <li><a href="export_en.htm">Export HTML</a></li>
+        </ul></div>
+
+        <div class="content_div">
+
+<h2>Create a Website in the Specified Directory</h2>
+<p>The user clicks the &quot;Open Directory&quot; button in the upper left corner, select the directory to create the new website. The software copies
+the built-in website template files into it, including RWD CSS files, icons, and background image files, and create a docs.tocx file to handle the
+table of contents of the website. After that, the user can start editing the content; This software does not have a &quot;Save&quot; button,
+It automatically saves the user's edits at any time.</p>
+<p><img src="images/opendir_en.png" alt="Choose the directory for the new website" />
+<img src="images/lang_switch.png" alt="Switch language" />
+<img src="images/preview.png" alt="Preview the current page" /></p>
+<p>During editing, you can click the &quot;Switch Language&quot; button in the upper right corner to switch between Chinese and English editions,
+or click the &quot;Preview&quot; button to show the generated page in your browser. After the software closes, it automatically remembers the current directory you are editing.
+Next time you open the software, it continues editing the same website. If you want to switch between multiple editing sites, Similarly,
+use 'Open Directory' to select another website directory. This software will read the docs.tocx file in that directory to load the website's content.</p>
+<h2>Manage the Table of Contents</h2>
+<p>A website may not have only one webpage. As a web document editor, this software provides the table of contents shown below, where each chapter
+generates a Chinese and English version of the webpage. For example, this software will first generate a page named index by default, then generate index_zh.htm
+and index_en.htm based on it. In index.html, there is JavaScript code that chooses to jump to one of them based on the reader's browser language.</p>
+<p><img src="images/toc_en.png" alt="Table of Contents" /></p>
+<p>In this user-interface, users can click the &quot;+&quot; button to add a new chapter. The following dialog box will appear. Enter the Chinese and English titles and file name of the new chapter.
+Existing chapters can also be renamed using &quot;A|&quot; button.  Additionally, dragging chapters directly in the table of contents can change the order of them.</p>
+<p><img src="images/chapdlg_en.png" alt="Chapter title and filename" /></p>
+<p>This software automatically saves the content of each chapter as .md files. For example, chapter content with the file name &quot;index&quot; will be saved
+as index_zh.md and index_en.md, and to generate  index_zh.htm and index_en.htm of the website, and links to each other are provided on the webpages.</p>
+<h2>Edit the Back Hyperlink</h2>
+<p>The purpose of this software is to edit and generate web document websites. A generated site may be used as a complete document site or as part of a some website.
+It which determines where the &quot;Back Home&quot; button in the upper left corner of the site should goes. This software can set the text and Chinese and English URLs displayed
+by the &quot;Back Home&quot; button in the user-interface shown below. You may replace the icon by replacing the back.png in the  images directory.</p>
+<p><img src="images/homelink_en.png" alt="The text and links of the home button" /></p>
+
+
+            <p style="text-align:center"><a class="next_button" href="mdtoolbar_en.htm">Next: Markdown Toolbar</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
