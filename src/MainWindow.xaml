@@ -188,7 +188,8 @@
             </StackPanel>
 
             <TextBox x:Name="ContextTextBox" Grid.Row="1" Grid.Column="0"
-                     TextWrapping="Wrap" AcceptsReturn="True" TextChanged="ContextTextBox_TextChanged" />
+                     TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="False"
+                     TextChanged="ContextTextBox_TextChanged" />
 
             <TextBlock x:Name="MessageLabel" Grid.Row="2" Grid.Column="0" Height="40" Style="{StaticResource StatusTextStyle}" />
         </Grid>
